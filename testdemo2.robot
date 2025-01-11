@@ -6,6 +6,7 @@ Test Teardown    Close Browser    #close browser is selenium library for closing
 
 *** Variables ***
 ${error_msg_login}    css:.alert-danger
+${error_msg_login2}    css:.alert-danger2
 
 *** Test Cases ***
 Validate Unsuccessful login

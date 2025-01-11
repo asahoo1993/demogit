@@ -8,6 +8,9 @@ ${error_msg_login}    css:.alert-danger
 ${check_git_x}    css:abc
 ${check_git_xx}    css:abcd
 ${check_git_xxy}    css:abcde
+${check_1}    css:abcde76
+${check_2}    css:abcde878
+${check_3}    css:abcde7678
 
 
 *** Test Cases ***
