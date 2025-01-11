@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-31T18:52:13.423780" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\sonal\PycharmProjects\robotframework\test">
+<suite id="s1-s1" name="Testdemo3" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo3.robot">
+<test id="s1-s1-t1" name="Validate Unsuccessful login" line="11">
+<kw name="open the browser with url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.804533" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.286099" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.803446" elapsed="11.074556"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.801251" elapsed="11.076751"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.890907" level="INFO">Typing text 'rahulshettyacademy' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.886669" elapsed="1.119169"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.007505" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:26.141736" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.005838" elapsed="0.537201"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:24.880431" elapsed="1.663838"/>
+</kw>
+<kw name="select the user option and select dropdown value as teacher">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.554175" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.552304" elapsed="0.196563"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@class='modal-body']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.750162" elapsed="0.231970"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.982966" level="INFO">Clicking button 'okayBtn'.</msg>
+<arg>okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.982966" elapsed="0.151770"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@class='modal-body']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.135735" elapsed="0.290429"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.427274" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.426164" elapsed="0.150791"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.579617" level="INFO">Selecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.578564" elapsed="0.107070"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.687822" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.686725" elapsed="0.036980"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:26.544269" elapsed="1.180443"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.725319" elapsed="2.256164"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.800110" elapsed="16.181373"/>
+</test>
+<doc>Validate login form</doc>
+<status status="PASS" start="2024-08-31T18:52:13.476537" elapsed="16.506601"/>
+</suite>
+<status status="PASS" start="2024-08-31T18:52:13.455344" elapsed="16.529843"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testdemo3">Test.Testdemo3</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-31T18:52:17.286099" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

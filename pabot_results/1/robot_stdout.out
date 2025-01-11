@@ -1,0 +1,24 @@
+==============================================================================
+Test                                                                          
+==============================================================================
+Test.Testdemo2 :: Validate login form                                         
+==============================================================================
+Validate Unsuccessful login                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo2.robot:11
+    T:  Validate Unsuccessful login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo2.robot:15
+      select the check box and select dropdown value as teacher    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'select the check box and select dropdown value as teacher' found.
+------------------------------------------------------------------------------
+Test.Testdemo2 :: Validate login form                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Test                                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\sonal\PycharmProjects\robotframework\test\pabot_results\1\output.xml

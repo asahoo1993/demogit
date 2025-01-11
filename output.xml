@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-31T18:52:58.866495" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\sonal\PycharmProjects\robotframework\test">
+<suite id="s1-s1" name="Testdemo" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo.robot">
+<test id="s1-s1-t1" name="Validate Unsuccessful login" line="10">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.793724" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.266530" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.793724" elapsed="9.394471"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.792671" elapsed="9.409612"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:23.212294" level="INFO">Typing text 'rahulshettyacademy' into text field 'css:#username'.</msg>
+<msg time="2024-08-31T18:52:25.194332" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-31T18:52:25.194332" level="FAIL">Element with locator 'css:#username' not found.</msg>
+<arg>css:#username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-31T18:52:23.208907" elapsed="1.997698">Element with locator 'css:#username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>11111</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-31T18:52:25.207583" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-31T18:52:25.208606" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-31T18:52:23.206416" elapsed="2.003190">Element with locator 'css:#username' not found.</status>
+</kw>
+<kw name="wait until its check and display error message">
+<status status="NOT RUN" start="2024-08-31T18:52:25.210201" elapsed="0.000000"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" start="2024-08-31T18:52:25.210710" elapsed="0.000585"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:25.211832" elapsed="3.469289"/>
+</kw>
+<status status="FAIL" start="2024-08-31T18:52:13.791608" elapsed="14.891354">Element with locator 'css:#username' not found.</status>
+</test>
+<doc>Validate login form</doc>
+<status status="FAIL" start="2024-08-31T18:52:13.420000" elapsed="15.265196"/>
+</suite>
+<suite id="s1-s2" name="Testdemo2" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo2.robot">
+<test id="s1-s2-t1" name="Validate Unsuccessful login" line="11">
+<kw name="open the browser with url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.785132" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.188618" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.785132" elapsed="10.211029"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.784128" elapsed="10.212033"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:23.996161" level="INFO">Typing text 'rahulshettyacademy' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:23.996161" elapsed="2.009677"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.007505" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:26.391396" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.005838" elapsed="0.651853"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:23.996161" elapsed="2.662624"/>
+</kw>
+<kw name="select the check box and select dropdown value as teacher">
+<msg time="2024-08-31T18:52:26.668706" level="FAIL">No keyword with name 'select the check box and select dropdown value as teacher' found.</msg>
+<status status="FAIL" start="2024-08-31T18:52:26.667861" elapsed="0.000845">No keyword with name 'select the check box and select dropdown value as teacher' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.670824" elapsed="2.550376"/>
+</kw>
+<status status="FAIL" start="2024-08-31T18:52:13.783033" elapsed="15.439165">No keyword with name 'select the check box and select dropdown value as teacher' found.</status>
+</test>
+<doc>Validate login form</doc>
+<status status="FAIL" start="2024-08-31T18:52:13.453215" elapsed="15.770055"/>
+</suite>
+<suite id="s1-s3" name="Testdemo3" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo3.robot">
+<test id="s1-s3-t1" name="Validate Unsuccessful login" line="11">
+<kw name="open the browser with url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.804533" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.286099" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.803446" elapsed="11.074556"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.801251" elapsed="11.076751"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.890907" level="INFO">Typing text 'rahulshettyacademy' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.886669" elapsed="1.119169"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.007505" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:26.141736" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.005838" elapsed="0.537201"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:24.880431" elapsed="1.663838"/>
+</kw>
+<kw name="select the user option and select dropdown value as teacher">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.554175" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.552304" elapsed="0.196563"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@class='modal-body']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.750162" elapsed="0.231970"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.982966" level="INFO">Clicking button 'okayBtn'.</msg>
+<arg>okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.982966" elapsed="0.151770"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath://div[@class='modal-body']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.135735" elapsed="0.290429"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.427274" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.426164" elapsed="0.150791"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.579617" level="INFO">Selecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.578564" elapsed="0.107070"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:27.687822" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.686725" elapsed="0.036980"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:26.544269" elapsed="1.180443"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:27.725319" elapsed="2.256164"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.800110" elapsed="16.181373"/>
+</test>
+<doc>Validate login form</doc>
+<status status="PASS" start="2024-08-31T18:52:13.476537" elapsed="16.506601"/>
+</suite>
+<suite id="s1-s4" name="Testdemo4" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo4.robot">
+<test id="s1-s4-t1" name="Validate child window functionality" line="12">
+<kw name="open the browser with url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.840077" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.248037" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.838815" elapsed="11.055464"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.834461" elapsed="11.060827"/>
+</kw>
+<kw name="select the link of child window">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.901320" level="INFO">Clicking element 'css:.blinkingText'.</msg>
+<arg>css:.blinkingText</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.899842" elapsed="0.834201"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.736276" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-31T18:52:25.735042" elapsed="5.001234"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:24.895997" elapsed="5.840279"/>
+</kw>
+<kw name="verify the user is switched to child window">
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.737273" elapsed="0.022356"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.761331" level="INFO">Verifying element 'css:h1' contains exact text 'DOCUMENTS REQUEST'.</msg>
+<arg>css:h1</arg>
+<arg>DOCUMENTS REQUEST</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.759629" elapsed="0.046701"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.736276" elapsed="0.070054"/>
+</kw>
+<kw name="grab the email id in the child window">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.839245" level="INFO">${text} = Please email us at mentor@rahulshettyacademy.com with below template to receive response</msg>
+<var>${text}</var>
+<arg>css:.red</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.807482" elapsed="0.032775"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-08-31T18:52:30.841419" level="INFO">@{words} = [ Please email us  |  mentor@rahulshettyacademy.com with below templ | e to receive response ]</msg>
+<var>@{words}</var>
+<arg>${text}</arg>
+<arg>at</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.840337" elapsed="0.002110"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-08-31T18:52:30.843839" level="INFO">${test_split} =  mentor@rahulshettyacademy.com with below templ</msg>
+<var>${test_split}</var>
+<arg>${words}</arg>
+<arg>1</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.842520" elapsed="0.001319"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-08-31T18:52:30.844845" level="INFO">@{words_2} = [ mentor@rahulshettyacademy.com | with | below | templ ]</msg>
+<var>@{words_2}</var>
+<arg>${test_split}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.843839" elapsed="0.001006"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-08-31T18:52:30.846109" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<var>${email}</var>
+<arg>${words_2}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.844845" elapsed="0.001264"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.846109" level="INFO">mentor@rahulshettyacademy.com</msg>
+<arg>${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.846109" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.847269" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.847269" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.806330" elapsed="0.040939"/>
+</kw>
+<kw name="switch to parent window and enter the email">
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.848474" elapsed="0.021817"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.871382" level="INFO">Typing text 'mentor@rahulshettyacademy.com' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.871382" elapsed="0.253626"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.848474" elapsed="0.276534"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:31.125008" elapsed="2.343960"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.830935" elapsed="19.638033"/>
+</test>
+<doc>Validate login form</doc>
+<status status="PASS" start="2024-08-31T18:52:13.444327" elapsed="20.026920"/>
+</suite>
+<suite id="s1-s5" name="Testdemo5" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo5.robot">
+<test id="s1-s5-t1" name="Invalid username" line="11">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.801251" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.373632" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.801251" elapsed="10.868244"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.800110" elapsed="10.870096"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.674560" level="INFO">Typing text 'uytuuyt' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.672850" elapsed="0.772838"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:25.451615" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:25.606532" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:25.446694" elapsed="0.413459"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:25.861441" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:25.860153" elapsed="0.298035"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-31T18:52:24.671781" elapsed="1.486673"/>
+</kw>
+<kw name="wait until its check and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${error_msg_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.160121" elapsed="2.223656"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:26.158968" elapsed="2.224809"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:28.429804" level="INFO">${error_msg} = Incorrect username/password.</msg>
+<var>${error_msg}</var>
+<arg>${error_msg_login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.385459" elapsed="0.045531"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_msg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.433510" elapsed="0.001092"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:28.384897" elapsed="0.050378"/>
+</kw>
+<arg>uytuuyt</arg>
+<arg>learning</arg>
+<status status="PASS" start="2024-08-31T18:52:13.799003" elapsed="14.636272"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.435275" elapsed="2.301001"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.796843" elapsed="16.939433"/>
+</test>
+<test id="s1-s5-t2" name="Invalid password" line="12">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.740178" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:31.644774" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.740033" elapsed="2.316504"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.738866" elapsed="2.319335"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:33.062811" level="INFO">Typing text 'rahulshe' into text field 'css:#username'.</msg>
+<msg time="2024-08-31T18:52:33.860410" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="4-selenium-screenshot-1.png"&gt;&lt;img src="4-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-31T18:52:33.860410" level="FAIL">Element with locator 'css:#username' not found.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-31T18:52:33.059462" elapsed="0.807154">Element with locator 'css:#username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-31T18:52:33.867201" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-31T18:52:33.867201" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-08-31T18:52:33.058201" elapsed="0.810039">Element with locator 'css:#username' not found.</status>
+</kw>
+<kw name="wait until its check and display error message">
+<status status="NOT RUN" start="2024-08-31T18:52:33.868240" elapsed="0.000000"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" start="2024-08-31T18:52:33.868240" elapsed="0.000000"/>
+</kw>
+<arg>rahulshe</arg>
+<arg>765765</arg>
+<status status="FAIL" start="2024-08-31T18:52:30.738866" elapsed="3.129374">Element with locator 'css:#username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:33.868240" elapsed="2.185494"/>
+</kw>
+<status status="FAIL" start="2024-08-31T18:52:30.737273" elapsed="5.316461">Element with locator 'css:#username' not found.</status>
+</test>
+<test id="s1-s5-t3" name="special characters" line="13">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:36.060277" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:36.540164" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:36.060277" elapsed="2.795313"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:36.059065" elapsed="2.797069"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:38.857216" level="INFO">Typing text '^%*' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:38.856134" elapsed="0.142679"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:38.998813" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:39.042449" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:38.998813" elapsed="0.089292"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:39.089488" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:39.089488" elapsed="0.057582"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-31T18:52:38.856134" elapsed="0.292046"/>
+</kw>
+<kw name="wait until its check and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${error_msg_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:39.148180" elapsed="2.152599"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:39.148180" elapsed="2.152599"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:41.321000" level="INFO">${error_msg} = Incorrect username/password.</msg>
+<var>${error_msg}</var>
+<arg>${error_msg_login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.300779" elapsed="0.020221"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_msg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.321000" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:41.300779" elapsed="0.020221"/>
+</kw>
+<arg>^%*</arg>
+<arg>$%#</arg>
+<status status="PASS" start="2024-08-31T18:52:36.056664" elapsed="5.264336"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.322010" elapsed="2.195096"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:36.055481" elapsed="7.461625"/>
+</test>
+<doc>Validate login form</doc>
+<status status="FAIL" start="2024-08-31T18:52:13.412150" elapsed="30.104956"/>
+</suite>
+<suite id="s1-s6" name="Testdemo6" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo6.robot">
+<test id="s1-s6-t1" name="Invalid username" line="12">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.871910" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.230348" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.871910" elapsed="10.235138"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.869788" elapsed="10.237724"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.109992" level="INFO">Typing text 'uytuuyt' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.109485" elapsed="1.982047"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.092971" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:26.341718" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.092683" elapsed="0.466886"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:26.560534" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.560534" elapsed="0.264354"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-31T18:52:24.108019" elapsed="2.716869"/>
+</kw>
+<kw name="wait until its check and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${error_msg_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:26.835035" elapsed="2.051664"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:26.827021" elapsed="2.059678"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:28.928792" level="INFO">${error_msg} = Incorrect username/password.</msg>
+<var>${error_msg}</var>
+<arg>${error_msg_login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.886699" elapsed="0.042093"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_msg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.929298" elapsed="0.001996"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:28.886699" elapsed="0.045739"/>
+</kw>
+<arg>username=uytuuyt</arg>
+<arg>password=learning</arg>
+<status status="PASS" start="2024-08-31T18:52:13.868707" elapsed="15.063731"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:28.933327" elapsed="2.233022"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.866489" elapsed="17.299860"/>
+</test>
+<test id="s1-s6-t2" name="Invalid password" line="12">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:31.173766" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:31.889512" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:31.173260" elapsed="2.767443"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:31.172255" elapsed="2.768448"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:33.942100" level="INFO">Typing text 'rahulshe' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:33.942100" elapsed="0.194969"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:34.138809" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:34.204329" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:34.137069" elapsed="0.139161"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:34.277377" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:34.276230" elapsed="0.065017"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-31T18:52:33.940703" elapsed="0.400544"/>
+</kw>
+<kw name="wait until its check and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${error_msg_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:34.343489" elapsed="2.011532"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:34.342340" elapsed="2.012681"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:36.378194" level="INFO">${error_msg} = Incorrect username/password.</msg>
+<var>${error_msg}</var>
+<arg>${error_msg_login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:36.355021" elapsed="0.023173"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_msg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-08-31T18:52:36.379193" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:36.355021" elapsed="0.025287"/>
+</kw>
+<arg>username=rahulshe</arg>
+<arg>password=765765</arg>
+<status status="PASS" start="2024-08-31T18:52:31.171112" elapsed="5.209196"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:36.380308" elapsed="3.138782"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:31.167461" elapsed="8.351629"/>
+</test>
+<test id="s1-s6-t3" name="special characters" line="12">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:39.523341" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:39.990643" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:39.521934" elapsed="2.089105"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:39.521934" elapsed="2.089105"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:41.614064" level="INFO">Typing text '^%*' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.612786" elapsed="0.142751"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:41.756540" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-08-31T18:52:41.792285" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.755537" elapsed="0.090516"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:41.846946" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.846053" elapsed="0.063759"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-31T18:52:41.612167" elapsed="0.298700"/>
+</kw>
+<kw name="wait until its check and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${error_msg_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-31T18:52:41.911443" elapsed="2.212306"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:41.910867" elapsed="2.212882"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:44.142154" level="INFO">${error_msg} = Incorrect username/password.</msg>
+<var>${error_msg}</var>
+<arg>${error_msg_login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:44.124852" elapsed="0.018328"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_msg}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-08-31T18:52:44.143245" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:44.123749" elapsed="0.019496"/>
+</kw>
+<arg>username=^%*</arg>
+<arg>password=$%#</arg>
+<status status="PASS" start="2024-08-31T18:52:39.521934" elapsed="4.621311"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:44.143245" elapsed="2.183531"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:39.520515" elapsed="6.806261"/>
+</test>
+<doc>Validate login form</doc>
+<status status="PASS" start="2024-08-31T18:52:13.500885" elapsed="32.826978"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 6 executions.</doc>
+<status status="FAIL" start="2024-08-31T18:52:13.392000" elapsed="15.288261"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="3" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testdemo">Test.Testdemo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Testdemo2">Test.Testdemo2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Testdemo3">Test.Testdemo3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Testdemo4">Test.Testdemo4</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s5" name="Testdemo5">Test.Testdemo5</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s6" name="Testdemo6">Test.Testdemo6</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-31T18:52:17.266530" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:17.188618" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:17.286099" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:17.248037" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:17.373632" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:31.644774" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:36.540164" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:17.230348" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:31.889512" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-31T18:52:39.990643" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

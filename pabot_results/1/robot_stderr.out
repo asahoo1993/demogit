@@ -1,0 +1,1 @@
+[ WARN ] The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry

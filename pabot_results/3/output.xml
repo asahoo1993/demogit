@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-31T18:52:13.389522" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\sonal\PycharmProjects\robotframework\test">
+<suite id="s1-s1" name="Testdemo4" source="C:\Users\sonal\PycharmProjects\robotframework\test\testdemo4.robot">
+<test id="s1-s1-t1" name="Validate child window functionality" line="12">
+<kw name="open the browser with url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:13.840077" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-08-31T18:52:17.248037" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-31T18:52:13.838815" elapsed="11.055464"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.834461" elapsed="11.060827"/>
+</kw>
+<kw name="select the link of child window">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:24.901320" level="INFO">Clicking element 'css:.blinkingText'.</msg>
+<arg>css:.blinkingText</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:24.899842" elapsed="0.834201"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.736276" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-31T18:52:25.735042" elapsed="5.001234"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:24.895997" elapsed="5.840279"/>
+</kw>
+<kw name="verify the user is switched to child window">
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.737273" elapsed="0.022356"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.761331" level="INFO">Verifying element 'css:h1' contains exact text 'DOCUMENTS REQUEST'.</msg>
+<arg>css:h1</arg>
+<arg>DOCUMENTS REQUEST</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.759629" elapsed="0.046701"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.736276" elapsed="0.070054"/>
+</kw>
+<kw name="grab the email id in the child window">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.839245" level="INFO">${text} = Please email us at mentor@rahulshettyacademy.com with below template to receive response</msg>
+<var>${text}</var>
+<arg>css:.red</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.807482" elapsed="0.032775"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-08-31T18:52:30.841419" level="INFO">@{words} = [ Please email us  |  mentor@rahulshettyacademy.com with below templ | e to receive response ]</msg>
+<var>@{words}</var>
+<arg>${text}</arg>
+<arg>at</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.840337" elapsed="0.002110"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-08-31T18:52:30.843839" level="INFO">${test_split} =  mentor@rahulshettyacademy.com with below templ</msg>
+<var>${test_split}</var>
+<arg>${words}</arg>
+<arg>1</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.842520" elapsed="0.001319"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-08-31T18:52:30.844845" level="INFO">@{words_2} = [ mentor@rahulshettyacademy.com | with | below | templ ]</msg>
+<var>@{words_2}</var>
+<arg>${test_split}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.843839" elapsed="0.001006"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-08-31T18:52:30.846109" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<var>${email}</var>
+<arg>${words_2}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.844845" elapsed="0.001264"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.846109" level="INFO">mentor@rahulshettyacademy.com</msg>
+<arg>${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.846109" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-31T18:52:30.847269" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.847269" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.806330" elapsed="0.040939"/>
+</kw>
+<kw name="switch to parent window and enter the email">
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.848474" elapsed="0.021817"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-31T18:52:30.871382" level="INFO">Typing text 'mentor@rahulshettyacademy.com' into text field 'css:#username'.</msg>
+<arg>css:#username</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-31T18:52:30.871382" elapsed="0.253626"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:30.848474" elapsed="0.276534"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-31T18:52:31.125008" elapsed="2.343960"/>
+</kw>
+<status status="PASS" start="2024-08-31T18:52:13.830935" elapsed="19.638033"/>
+</test>
+<doc>Validate login form</doc>
+<status status="PASS" start="2024-08-31T18:52:13.444327" elapsed="20.026920"/>
+</suite>
+<status status="PASS" start="2024-08-31T18:52:13.421696" elapsed="20.053881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testdemo4">Test.Testdemo4</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-31T18:52:17.248037" level="WARN">The chromedriver version (127.0.6533.119) detected in PATH at C:\Users\sonal\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.113); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

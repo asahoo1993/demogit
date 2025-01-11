@@ -1,0 +1,37 @@
+==============================================================================
+Test                                                                          
+==============================================================================
+Test.Testdemo5 :: Validate login form                                         
+==============================================================================
+Invalid username                                                      | PASS |
+------------------------------------------------------------------------------
+Invalid password                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo5.robot:12
+    T:  Invalid password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo5.robot:12
+      Validate Unsuccessful login    rahulshe    765765
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo5.robot:20
+      fill the login form    ${username}    ${password}
+      |  ${username} = rahulshe (str)
+      |  ${password} = 765765 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo5.robot:31
+      Input Text    css:#username    ${username}
+      |  ${username} = rahulshe (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'css:#username' not found.
+------------------------------------------------------------------------------
+special characters                                                    | PASS |
+------------------------------------------------------------------------------
+Test.Testdemo5 :: Validate login form                                 | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Test                                                                  | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Output:  C:\Users\sonal\PycharmProjects\robotframework\test\pabot_results\4\output.xml

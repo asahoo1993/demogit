@@ -1,0 +1,27 @@
+==============================================================================
+Test                                                                          
+==============================================================================
+Test.Testdemo :: Validate login form                                          
+==============================================================================
+Validate Unsuccessful login                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo.robot:10
+    T:  Validate Unsuccessful login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo.robot:12
+      fill the login form    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\sonal\PycharmProjects\robotframework\test\testdemo.robot:23
+      Input Text    css:#username    rahulshettyacademy
+______________________________________________________________________________
+| FAIL |
+Element with locator 'css:#username' not found.
+------------------------------------------------------------------------------
+Test.Testdemo :: Validate login form                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Test                                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\sonal\PycharmProjects\robotframework\test\pabot_results\0\output.xml

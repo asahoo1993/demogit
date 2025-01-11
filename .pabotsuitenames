@@ -1,0 +1,10 @@
+datasources:64abc652b8c6faad4aecedc600d0f08b312cf2aa
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:a204fd107f7deba574f34db03478f179eed457fa
+--suite Test.Testdemo
+--suite Test.Testdemo2
+--suite Test.Testdemo3
+--suite Test.Testdemo4
+--suite Test.Testdemo5
+--suite Test.Testdemo6
