@@ -5,6 +5,9 @@ Test Teardown    Close Browser    #close browser is selenium library for closing
 
 *** Variables ***
 ${error_msg_login}    css:.alert-danger
+${check_git_x}    css:abc
+${check_git_xx}    css:abcd
+${check_git_xxy}    css:abcde
 
 
 *** Test Cases ***
